@@ -58,3 +58,22 @@ header .signup {
   footer {
     color: white;
   }
+
+  .text-shadow {
+    font-size: 18px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);  
+  }
+
+  @media (min-width: 992px) {
+    .wrapper {
+      width: 30%;
+      margin: 0 auto !important;
+    }
+  }
+
+  .wrapper {
+    background-color: rgba(255, 255, 255, 0.5); /* Customize the color and opacity */
+  }
+  
+  
+  
