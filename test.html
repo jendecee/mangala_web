@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thống kê tài khoản</title>
+    <style>
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .total-row {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Thống kê tài khoản</h2>
+        <table>
+            <tr>
+                <th>Tổng số tài khoản</th>
+                <td id="total-accounts"></td>
+            </tr>
+            <tr>
+                <th>Số lượng tài khoản VIP</th>
+                <td id="vip-accounts"></td>
+            </tr>
+            <tr>
+                <th>Số lượng tài khoản thường</th>
+                <td id="regular-accounts"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        // Giả sử bạn có các biến lưu số liệu thống kê
+        var totalAccounts = 1000;
+        var vipAccounts = 200;
+        var regularAccounts = 800;
+
+        // Gán giá trị vào các ô tương ứng trên giao diện
+        document.getElementById("total-accounts").innerText = totalAccounts;
+        document.getElementById("vip-accounts").innerText = vipAccounts;
+        document.getElementById("regular-accounts").innerText = regularAccounts;
+    </script>
+</body>
+</html>
